@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      body{
+  margin: 0;
+  padding: 0;
+  background:#01050c;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  z-index: 1;
+  position: fixed;
+  background:#01050c;
+  padding: 20px;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 75px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.300);
+  transition: all 0.4s ease;
+}
+header.sticky{
+  padding: 15px 0;
+}
+
+.left_area h1{
+  color: #fff;
+  margin: 15px 265px;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: candara;
+}
+
+
+.logout_btn:hover{
+  background: #0B87A6;
+}
+
+.sidebar{
+  z-index: 1;
+  top: 0;
+  background: #01050c;
+  margin-top: 70px;
+  padding-top: 15px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+  
+}
+
+.profile_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .profile_info .profile_image{
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.sidebar .profile_info h4{
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: candara;
+}
+.sidebar .profile_info h3{
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: candara;
+}
+
+
+.sidebar a{
+  color: aqua;
+  display: block;
+  width: 100%;
+  line-height: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+  text-align: center;
+  outline: none;
+  font:normal 700 14px Lato, sans-serif;
+  font-size: 15px;
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  cursor: pointer;
+  left: 200px;
+  font-size: 22px;
+  margin: 30px 15px;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: #ff0000;
+}
+
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 165px;
+  width: 100%;
+}
+
+label #sidebar{
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  cursor: pointer;
+  left: 200px;
+  font-size: 22px;
+  margin: 30px 15px;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar:hover{
+  color: #ff0000;
+}
+
+ .profile_info #check2:checked ~ .sidebar{
+  left: -250px;
+}
+
+.profile_info #check2:checked ~ .sidebar a span{
+  display: none;
+}
+
+.profile_info #check2:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 165px;
+  width: 100%;
+}
+
+.fundo{
+  display: flex;
+  background:#01050c
+}
+.fundo .image{
+  display: flex;
+  margin: 60px 40px;
+}
+.fundo .image img{
+  border-radius: 20px;
+  border-style:groove;
+  border-color: rgb(138, 45, 17);
+  border-width: 10px;
+}
+.fundo .image .text{
+  display: flex;
+}
+
+.fundo .image .text h1{
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin: 100px 70px;
+}
+.fundo .image .text span{
+  color: rgb(255, 0, 0);
+  font-size: 70px;
+  font-weight: 500;
+  font-style: normal;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin: 100px 70px;
+}
+
+.content{
+  margin-top: 85px;
+  padding: 20px;
+  margin-left: 250px;
+  background: url(../imagens/travel.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  height: 62.5vw;
+  max-height: 74vh;
+  min-height: 200px;
+  transition: 0.5s; 
+}
+
+.content2{
+  background-color:  #01050c;
+  display: flex;
+}
+.content2 .card{
+  width: 30%;
+  background: rgba(255, 255, 255, 0.705);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 50px 4px;
+  margin-bottom: 10px;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.content2 .card:hover{
+  background: rgb(255, 255, 255);
+  box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.300), 0px 5px 15px 0px rgba(0, 0, 0, 0.300),
+              0px 0px 10px 0px rgba(0, 0, 0, 0.300), 0px 0px 15px 5px rgba(0, 0, 0, 0.300);
+}
+
+.container{
+  background-color:  #01050c;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  margin: 20px auto 10px;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+.container .image{
+  margin: 0px 18px;
+  width: calc(500px - 0px);
+  height: calc(300px - 0px);
+  display: block;
+  float: left;
+  position: relative;
+  box-sizing: content-box;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.container .image img{
+  margin: 3px;
+  width:  calc(100% - 0%);
+  height: calc(100% - 0%);
+  display: block;
+  width: calc(80% - 0%);
+  height: auto;
+}
+
+
+
+
+#check:checked ~ .content{
+  margin-left: 0px;
+}
+#check:checked ~ .sidebar .profile_info{
+  display: none;
+}
+#check{
+  display: none;
+}
+.mobile_nav{
+  display: none;
+}
+
+.content .card p{
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px){
+  .sidebar{
+    display: none;
+  }
+
+  #sidebar_btn{
+    display: none;
+  }
+
+  .content{
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+
+  #check:checked ~ .content{
+    margin-left: 0;
+  }
+
+  .mobile_nav{
+    display: block;
+    width: calc(100% - 0%);
+  }
+
+  .nav_bar{
+    background: #222;
+    width: (100% - 0px);
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav_bar .mobile_profile_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .nav_bar .nav_btn{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+  }
+
+  .nav_bar .nav_btn:hover{
+    color: #19B3D3;
+  }
+
+  .mobile_nav_items{
+    background: #2F323A;
+    display: none;
+  }
+
+  .mobile_nav_items a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 60px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+  }
+
+  .mobile_nav_items a:hover{
+    background: #19B3D3;
+  }
+
+  .mobile_nav_items i{
+    padding-right: 10px;
+  }
+
+  .active{
+    display: block;
+  }
+}
